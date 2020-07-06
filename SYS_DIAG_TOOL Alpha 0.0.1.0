@@ -1,0 +1,64 @@
+@echo off
+
+echo ***********************
+echo Starting Sys diagnostic...
+echo ***********************
+echo Starting PowerCFG command...
+echo ***********************
+
+Pause
+
+powercfg -energy
+
+echo ***********************
+Echo opening energy report file...
+echo ***********************
+
+start C:\Windows\system32\energy-report.html
+
+Pasue
+
+echo ***********************
+echo Starting System Info command...
+echo ***********************
+
+SystemInfo
+
+Pause
+
+echo **********************
+echo Starting Net use command... 
+echo **********************
+
+Pause
+
+Netuse
+
+echo *********************
+echo Starting Check Disk command (C:\ drive)
+echo *********************
+
+Pause
+
+CHKDSK /f C:\
+
+echo *********************
+echo Starting Systen scan command
+echo *********************
+
+Pause
+
+SFC /SCANNOW
+
+echo *********************
+echo Diagnostic complete
+echo I hope this was helpful
+echo If you have any suggestions
+echo please let me know at:
+echo https://github.com/geeps13/SYS_DIAG_TOOL/
+echo *********************
+echo COPYRIGHT GEEPS13 2020
+echo *********************
+
+PAUSE
+
