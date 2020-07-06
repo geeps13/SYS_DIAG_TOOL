@@ -23,4 +23,9 @@ Runs commands:
 If you have any suggestions or issues please let me know at:
 https://github.com/geeps13/SYS_DIAG_TOOL
 
+
+Use the software and code as you wish (As long as it is not malicious).
+
+*****************************************************
+
 COPYRIGHT: GEEPS13 2020
